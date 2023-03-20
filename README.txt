@@ -5,8 +5,7 @@ Pip has trouble installing plyvel, so a conda environment is recommented
 If you do not already have anaconda installed, you can download miniconda here: https://docs.conda.io/en/latest/miniconda.html
 You can build the conda environment by running 'conda env create -f environment.yml' or by following the instructions in requirements.txt
 
-To run the sequencer, run sequencer/node.py
-To run the client, run sequencer/node.py
+To run the client, run node.py
 
 By default the sequencer will run on localhost on port 5000
 To change the defaults, edit params.json
