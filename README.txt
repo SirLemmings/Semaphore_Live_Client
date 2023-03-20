@@ -3,6 +3,11 @@ Welcome to the prototype implementation of the Semaphore client
 Simply run client_node to connect to the network.
 It will create a 'Client' folder that stores node data (Mac: in home directory, Linux: in local directory) 
 
+In the GUI:
+Write a message then click the "broadcast" button to broadcast
+Click on a previous message to reply
+Broadcast "!mint" to mint a new alias
+Broadcast "!nym <your_new_nym>" to update your alias nym
 
 Or, if you want to run the source:
 
@@ -19,12 +24,6 @@ SEQUENCER_PUBKEY must be updated in params.json if the sequencer private key is 
 Use the "pubkey" command to get the sequencer pubkey
 
 The client will automatically connect to the sequencer on startup
-
-In the GUI:
-Write a message then click the "broadcast" button to broadcast
-Click on a previous message to reply
-Broadcast "!mint" to mint a new alias
-Broadcast "!nym <your_new_nym>" to update your alias nym
 
 In the Terminal:
 Use the "mint" command to create reqeust a new alias
