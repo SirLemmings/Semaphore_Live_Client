@@ -1,7 +1,7 @@
 Welcome to the prototype implementation of the Semaphore client
 
 Simply run client_node to connect to the network.
-It will create a 'Client' folder in the Home directory that stores node data
+It will create a 'Client' folder that stores node data (Mac: in home directory, Linux: in local directory) 
 
 
 Or, if you want to run the source:
