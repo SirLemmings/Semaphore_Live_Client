@@ -11,21 +11,6 @@ import socket
 import os
 from wrappers import Alias
 
-def get_next_node_number():
-    # Set the base directory where the node directories will be created
-    base_dir = "./"
-
-    # Find the highest node number used so far
-    node_dirs = os.listdir(base_dir)
-    node_nums = [int(name.split("node_")[1]) for name in node_dirs if "node_" in name]
-    if node_nums:
-        highest_node_num = max(node_nums)
-    else:
-        highest_node_num = -1
-
-    # Return the next available node number
-    return f"node_{highest_node_num + 1}"
-
 # connection info for node
 if pm.SEQUENCER_IP =="":
     SEQUENCER_IP = socket.gethostbyname("localhost")
@@ -39,7 +24,7 @@ client_socket.setblocking(False)
 
 # distinguish between different clients running on the same machine
 # sys_id = input("id: ")
-sys_id = get_next_node_number()
+sys_id = 'client'
 if sys_id != "":
     sys_id = "/" + sys_id
 identity_processor = None
